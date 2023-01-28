@@ -16,6 +16,8 @@ const signupEndpoint: GetAPISchema<
     POST: handlers['signup'],
   })
 
+  console.log('!@#123')
+
   const input = await getInput(req)
   const { cookies } = req
   const cartId = cookies.get(config.cartCookie)?.value
